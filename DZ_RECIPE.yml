@@ -1,0 +1,15 @@
+dev:
+  commands:
+  - command: go mod download
+    directory: .
+    name: install cmd
+  - command: npm i
+    directory: third_party
+    name: install cmd
+  name: ""
+  packages:
+  - nixpkgs.docker
+  - nixpkgs.go_1_18
+  - nixpkgs.nodejs_18
+  repos:
+  - https://github.com/golang/vscode-go/
